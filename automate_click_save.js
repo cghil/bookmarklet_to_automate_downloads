@@ -5,8 +5,8 @@ javascript:(function(){
 	var counter = 0;
 	function myWindowOpener(){
 		counter +=1;
-		new_url = orginal_url.substr(0, length_url - 5) + counter + ".jpg";
-		childWindow = window.open(new_url);
+		var new_url = orginal_url.substr(0, length_url - 5) + counter + ".jpg";
+		var childWindow = window.open(new_url);
 		setTimeout(function(){
 			if (imgValidator !== null && imgValidator.length === 1){
 				imgValidator = childWindow.document.getElementsByTagName('img');
