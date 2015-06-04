@@ -10,10 +10,10 @@ javascript:(function(){
 		setTimeout(function(){
 			if (imgValidator !== null && imgValidator.length === 1){
 				imgValidator = childWindow.document.getElementsByTagName('img');
-				SaveToDisk(new_url, 'image'+ counter + '.png');
+				SaveToDisk(new_url, 'image'+ counter + '.jpg');
 				myWindowOpener();
 			}
-		}, 500);
+		}, 1000);
 	}
 	myWindowOpener();
 	function SaveToDisk(fileURL, fileName) {
