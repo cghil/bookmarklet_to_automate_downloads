@@ -11,6 +11,7 @@ javascript:(function(){
 			if (imgValidator !== null && imgValidator.length === 1){
 				imgValidator = childWindow.document.getElementsByTagName('img');
 				SaveToDisk(new_url, 'image'+ counter + '.jpg');
+				childWindow.close();
 				myWindowOpener();
 			}
 		}, 1000);
